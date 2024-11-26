@@ -1,0 +1,41 @@
+{
+	"name": "SAC_ChatGPT",
+	"description": "Custom ChatGPT Widget for SAC",
+	"newInstancePrefix": "SACCHATGPT",
+	"eula": "",
+	"vendor": "amrisole",
+	"license": "",
+	"id": "com.amrisole.sap.sac.chatgpt",
+	"version": "1.0.1",
+	"icon": "",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "custom-button",
+			"url": "https://kandpalpranav.github.io/CustomWidget/Webcomponent.js",
+			"integrity": ""	,
+			"ignoreIntegrity": true
+			
+		}		
+	],
+	"properties": {
+		"width": {
+			"type": "integer",
+			"default": 192
+		},
+		"height": {
+			"type": "integer",
+			"default": 32
+		}
+	},
+	"methods": {
+		"clear": {
+			"description": "Clear the resultset"
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the button."
+		}
+	}
+}
