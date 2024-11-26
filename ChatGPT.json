@@ -11,14 +11,14 @@
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "custom-button",
+			"tag": "custom-widget",
 			"url": "https://solesama.github.io/ChatGPT_Widget.js",
 			"integrity": ""	,
 			"ignoreIntegrity": true
 			
 		}		
 	],
-	"properties": {
+  	"properties": {
 		"width": {
 			"type": "integer",
 			"default": 192
@@ -27,15 +27,30 @@
 			"type": "integer",
 			"default": 32
 		}
-	},
-	"methods": {
-		"clear": {
-			"description": "Clear the resultset"
+  	},
+  	"methods": {
+		"post": {
+			"description": "Wrapper for jQuery post",
+			"parameters": [
+				{
+					"name": "APIKey",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "endPoint",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "prompt",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"returnType": "string"
 		}
-	},
-	"events": {
-		"onClick": {
-			"description": "Called when the user clicks the button."
-		}
-	}
+  	},
+  	"events": {
+  	}
 }
